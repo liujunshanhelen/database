@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>780</width>
+    <height>563</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>721</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="select">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>721</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>SELECT [ ENAME = ’Mary’ &amp; DNAME = ’Research’ ] ( EMPLOYEE JOIN DEPARTMENT )</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PROJECTION [ BDATE ] ( SELECT [ ENAME = ’John’ &amp; DNAME = ’ Research’ ] ( EMPLOYEE JOIN DEPARTMENT) )</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SELECT [ ESSN = ’01’ ] (  PROJECTION [ ESSN, PNAME ] ( WORKS_ON JOIN PROJECT ) )</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>140</y>
+     <width>321</width>
+     <height>381</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="show">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>170</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>显示</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>210</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询优化</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
